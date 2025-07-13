@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Frontend Mentor | Ping coming soon page</title>
+
+   <link rel="icon" href="./assets/images/favicon-32x32.png">
+   <link rel="apple-touch-icon" href="./assets/images/favicon-32x32.png">
+
+   <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+   <main class="main">
+      <header class="main__header">
+         <h1 class="visually-hidden">Ping coming soon page</h1>
+         <img src="./assets/images/logo.svg" alt="" class="main__logo">
+
+         <p class="main__subtitle">We are launching <span class="main__subtitle--highlight">soon!</span></p>
+         <p class="main__description">Subscribe and get notified</p>
+      </header>
+
+      <form action="#" id="form-subscribe" class="form" novalidate>
+         <div class="form__group">
+            <label for="input-email" class="visually-hidden">Email address</label>
+            <input type="email" name="email" id="input-email" class="form__input" placeholder="Your email address..."
+               aria-describedby="form-error" required>
+            <p id="form-error" class="form__error visually-hidden" role="alert">Please provide a valid email address</p>
+         </div>
+         <button type="submit" class="form__submit" disabled>Notify Me</button>
+      </form>
+
+      <dialog id="dialog-thanks" class="form__dialog" aria-labelledby="dialog-title" aria-describedby="dialog-desc">
+         <h2 id="dialog-title" class="form__dialog-title">Thanks for subscribing!</h2>
+         <p id="dialog-desc" class="form__dialog-message">You'll receive an email confirmation shortly.</p>
+         <form method="dialog">
+            <button type="submit" class="form__dialog-close" aria-label="Close dialog">Close</button>
+         </form>
+      </dialog>
+
+      <div class="main__illustration" aria-hidden="true">
+         <img src="./assets/images/illustration-dashboard.png" alt="" class="main__image">
+      </div>
+   </main>
+
+   <footer class="footer">
+      <ul class="footer__social" aria-label="Social media links">
+         <li class="footer__item">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+               title="Facebook" class="footer__link">
+               <svg fill="currentColor" width="15" height="15" aria-hidden="true">
+                  <use href="./assets/images/sprite.svg#facebook" />
+               </svg>
+            </a>
+         </li>
+         <li class="footer__item">
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X" title="X"
+               class="footer__link">
+               <svg fill="currentColor" width="15" height="15" aria-hidden="true">
+                  <use href="./assets/images/sprite.svg#x" />
+               </svg>
+            </a>
+         </li>
+         <li class="footer__item">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+               title="Instagram" class="footer__link">
+               <svg fill="currentColor" width="15" height="15" aria-hidden="true">
+                  <use href="./assets/images/sprite.svg#instagram" />
+               </svg>
+            </a>
+         </li>
+      </ul>
+
+      <p class="footer__copyright">&copy; Copyright Ping. All rights reserved.</p>
+
+      <p class="footer__attribution">Challenge by <a href="https://www.frontendmentor.io/challenges" target="_blank"
+            rel="noopener noreferrer" class="footer__attribution-link">Frontend Mentor</a> - Coded by <a
+            href="https://github.com/vimpdev/fem-ping-coming-soon-page" target="_blank" rel="noopener noreferrer"
+            class="footer__attribution-link">VIMP</a> ✨</p>
+   </footer>
+
+   <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
