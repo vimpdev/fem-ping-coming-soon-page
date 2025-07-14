@@ -55,7 +55,7 @@ Users should be able to:
 
 🚀 [Live Demo ➔](https://vimpdev.github.io/fem-ping-coming-soon-page/)
 
-<!-- 🌐 [Solution on Frontend Mentor ➔]() -->
+🌐 [Solution on Frontend Mentor ➔](https://www.frontendmentor.io/solutions/ping-single-column-coming-soon-page-1vnUy9ALdj)
 
 ---
 
