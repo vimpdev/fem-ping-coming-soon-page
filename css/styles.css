@@ -308,7 +308,7 @@ body {
    outline-color: var(--blue);
 }
 
-.form__submit:disabled {
+.form__submit[aria-disabled="true"] {
    opacity: .45;
    cursor: not-allowed;
 }
@@ -349,5 +349,10 @@ body {
    .footer__attribution-link:hover {
       color: var(--blue);
       text-decoration: none;
+   }
+
+   .form__submit[aria-disabled="true"]:hover {
+      opacity: .45;
+      /* cursor: not-allowed; */
    }
 }
